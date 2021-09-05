@@ -11,9 +11,28 @@ return 'NO' if the parentheses in the input string are not balanced,.
 
 console.log('PART 4');
 
-const isABalancedString = () => {
-  // WRITE YOUR CODE BELOW THIS LINE
+const isABalancedString = (string) => {
+  let answer=No
+  if(string.includes([])){
+    answer=yes
+  }
+  return answer
 };
+
+
+// or
+const isABalancedString=(string)=>{
+  let answer=No
+  if(string.indexOf([string])||string.indexOf([{string}])) ||string.indexOf([(string)]{string}{(string)(string)}){
+   answer=yes
+  }
+  return answer
+}
+
+
+
+
+
 
 /*
 
